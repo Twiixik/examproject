@@ -3,5 +3,258 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #fffefb;
+}
+
+:root {
+  --GREEN: #88AB8E;
+  --LIGHTGREEN: #AFC8AD;
+  --BEIGE: #EEE7DA;
+  --LIGHT: #F2F1EB;
+  --WHITE: WHITE;
+  --BLACK: BLACK;
+}
+
+/* Button for each poroject */ 
+
+button {
+  background-color: var(--WHITE);
+  color: var(--BLACK);
+  border: 0.1em solid var(--BLACK);
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.7em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+button:hover {
+  background-color: var(--BLACK);
+  color: var(--WHITE);
+}
+
+/* links style */ 
+
+a {
+  text-decoration: none;
+  color: var(--WHITE);
+}
+
+
+/* Header Style */
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--GREEN);
+}
+
+header li {
+  list-style: none;
+}
+
+.navbar{
+  width: 90em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar .links {
+  display: flex;
+  gap: 2em;
+  font-size: 1.2em;
+}
+
+/* bold and underline when clicked */
+
+.links li:nth-child(2) a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* underline when hovering */ 
+
+.links li a:hover {
+  text-decoration: underline;
+}
+
+.navbar .toggle_btn {
+  color: var(--WHITE);
+  font-size: 1em;
+  cursor: pointer;
+  display: none;
+}
+
+.logo {
+  color: var(--WHITE);
+}
+
+.toggle_btn i {
+  font-size: 1.5em; 
+}
+
+/* DROPDOWN MENU */ 
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2em;
+  top: 6em;
+  height: 0;
+  width: 300px;
+  background-color: var(--GREEN);
+  border-radius: 0em 0em 1em 1em ;
+  overflow: hidden;
+  transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+  height: 200px;
+
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Text about the page style */ 
+
+.About-Page {
+  padding-bottom: 0;
+  padding: 2em;
+  text-align: center;
+}
+
+/* Grid style */ 
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 2em;
+  padding-top: 1em;
+}
+
+.grid-item {
+box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+background-color: var(--LIGHT);
+border-radius: 1em;
+display: flex;
+}
+
+.grid-item img {
+width: 100%;
+object-fit: cover;
+border-radius: 1em 0em 0em 1em;
+border-right: 0.3em solid var(--GREEN) ;
+}
+
+.space-picture {
+  max-width: 25%;
+}
+
+.side-text {
+  padding: 1.5em;
+}
+
+/* Form container style */
+
+.form-container {
+  padding: 2em;
+  background-color: var(--LIGHT);
+  border-radius: 1em;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  margin:  2em auto;
+  max-width: 600px;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: var(--GREEN);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+label {
+  font-weight: bold;
+  color: var(--GREEN);
+}
+
+input, textarea {
+  padding: 0.5em;
+  border: 2px solid var(--GREEN);
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVE DROP DOWN MENU !!!! */
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn {
+      display: none;  
+  }
+
+  .navbar .toggle_btn {
+      display: block;
+  }
+
+  .dropdown_menu {
+      display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+      left: 2rem;
+      width: unset;
+  }
+
+  .grid-item{
+    display: grid;
+  }
+
+  .grid-item img {
+    display: grid;
+    border-radius: 1em 1em 0em 0em;
+    border-bottom: 0.5em solid var(--GREEN) ;
+    border-right: 0;
+  }
+
+  .form-container{
+    margin:  auto 2em;
+  }
+
+  .space-picture {
+    max-width: none;
+  }
+  
+
 }

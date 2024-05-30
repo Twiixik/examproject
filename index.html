@@ -5,13 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Rasmus Cederdorff - RACE" />
     <meta name="description" content="Project Template" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="app.css" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <title>Project Template</title>
+    <link rel="shortcut icon" href="img/tp.png" type="image/x-icon" />
+    <title>T-P Projects</title>
   </head>
 
   <body>
-    <h1>Project Template</h1>
+
+    <header>
+      <div class="navbar">
+        <h2 class="logo">Timotej Piontek</h2>
+          <ul class="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#contact-form">Contact</a></li>
+          </ul>
+          <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+      </div>
+  
+      <div class="dropdown_menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+      </div>
+  </header>
+
+    <div class="About-Page">
+      <h1>Timotej's Projects</h1>
+      <p>My Project's from 1st until 2nd Semester</p>
+    </div>
+
+    
+
+    <section id="posts-grid" class="grid"></section>
+
+ <!-- New Form Section -->
+
+ <h1  class="About-Page">Do you like my projects?</h1>
+
+ <div class="form-container" id="contact-form">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+  </form>
+</div>
 
     <script src="app.js"></script>
   </body>
