@@ -11,7 +11,7 @@ async function initApp() {
 }
 
 async function fetchPost() {
-  const response = await fetch("http://exampractice.timiweb.dk/wp-json/wp/v2/projects?acf_format=standard");
+  const response = await fetch("https://exampractice.timiweb.dk/wp-json/wp/v2/projects?acf_format=standard");
   const data = await response.json();
   return data;
 }
