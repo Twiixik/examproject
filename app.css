@@ -130,7 +130,7 @@ header li {
 
 .About-Page {
   padding-bottom: 0;
-  padding: 2em;
+  padding: 1.5em;
   text-align: center;
 }
 
@@ -153,13 +153,15 @@ display: flex;
 
 .grid-item img {
 width: 100%;
+height: 100%;
 object-fit: cover;
 border-radius: 1em 0em 0em 1em;
 border-right: 0.3em solid var(--GREEN) ;
 }
 
 .space-picture {
-  max-width: 25%;
+    height: 100%;
+    width: 100%;
 }
 
 .side-text {
@@ -175,7 +177,7 @@ border-right: 0.3em solid var(--GREEN) ;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   margin:  2em auto;
   max-width: 600px;
-  margin-bottom: 20em;
+  margin-bottom: 5em;
 }
 
 .form-container h2 {
@@ -205,6 +207,51 @@ textarea {
   resize: vertical;
 }
 
+/* footer */ 
+
+/* Footer styles */
+footer {
+  background-color: #EEE7DA; /* Adjust to match your theme */
+  padding: 2em 0;
+  border-top: 0.5em solid #88AB8E; /* Adjust to match your theme */
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #88AB8E; /* Adjust to match your theme */
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  color: #88AB8E; /* Adjust to match your theme */
+}
+
+
+
 
 
 
@@ -230,32 +277,33 @@ textarea {
   .dropdown_menu {
       display: block;
   }
+  
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
 }
 
-@media (max-width: 576px) {
-  .dropdown_menu {
-      left: 2rem;
-      width: unset;
-  }
+.grid-item{
+  display: grid;
+}
 
-  .grid-item{
-    display: grid;
-  }
+.grid-item img {
+  display: grid;
+  border-radius: 1em 1em 0em 0em;
+  border-bottom: 0.5em solid var(--GREEN) ;
+  border-right: 0;
+}
 
-  .grid-item img {
-    display: grid;
-    border-radius: 1em 1em 0em 0em;
-    border-bottom: 0.5em solid var(--GREEN) ;
-    border-right: 0;
-  }
+.form-container{
+  margin:  auto 2em;
+}
 
-  .form-container{
-    margin:  auto 2em;
-  }
+.space-picture {
+  max-width: none;
+}
 
-  .space-picture {
-    max-width: none;
-  }
-  
+.form-container {
+  margin-bottom: 5em;
+}
 
 }
