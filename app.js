@@ -6,8 +6,8 @@ window.addEventListener("load", initApp); // When the page is loaded, run initAp
 async function initApp() {
   console.log("initApp: app.js is running 🎉"); // Log to the console that the app is running
   const projects = await fetchPost();
-  console.log(projects);
-  displayProjectsGrid(projects);
+  console.log(projects); // Log to the console that the app is running
+  displayProjectsGrid(projects); // Call Function
 }
 
 async function fetchPost() {
@@ -22,6 +22,7 @@ function displayProjectsGrid(projects) {
   for( const project of projects) {
     projectsGrid.insertAdjacentHTML(
       "beforeend",
+      //HTML!
       `
     <article class="grid-item">
       <div class="space-picture"> 

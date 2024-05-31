@@ -6,6 +6,8 @@ body {
   background-color: #fffefb;
 }
 
+/* Colors Var() */ 
+
 :root {
   --GREEN: #88AB8E;
   --LIGHTGREEN: #AFC8AD;
@@ -33,7 +35,7 @@ button:hover {
   color: var(--WHITE);
 }
 
-/* links style */ 
+/* a links style */ 
 
 a {
   text-decoration: none;
@@ -207,13 +209,11 @@ textarea {
   resize: vertical;
 }
 
-/* footer */ 
-
 /* Footer styles */
 footer {
-  background-color: #EEE7DA; /* Adjust to match your theme */
+  background-color: #EEE7DA;
   padding: 2em 0;
-  border-top: 0.5em solid #88AB8E; /* Adjust to match your theme */
+  border-top: 0.5em solid #88AB8E; 
   text-align: center;
 }
 
@@ -237,7 +237,7 @@ footer {
 
 .footer-links a {
   text-decoration: none;
-  color: #88AB8E; /* Adjust to match your theme */
+  color: #88AB8E;
   font-weight: bold;
 }
 
@@ -247,7 +247,7 @@ footer {
 
 footer p {
   margin: 0;
-  color: #88AB8E; /* Adjust to match your theme */
+  color: #88AB8E; 
 }
 
 
@@ -282,7 +282,7 @@ footer p {
     left: 2rem;
     width: unset;
 }
-
+/* Grid  */
 .grid-item{
   display: grid;
 }
